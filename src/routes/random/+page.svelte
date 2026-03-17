@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { random, shuffleArr } from "./utils/index.svelte";
-  import quotesData from "/src/data/quotes.yaml";
+  import { random, shuffleArr } from "$lib/utils";
+  import quotesData from "$lib/data/quotes.yaml";
 
   let quotes: Array<[string, string]> = [];
 

@@ -6,7 +6,6 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/random_quote_generator/",
   plugins: [
     svelte(),
     tailwindcss(),

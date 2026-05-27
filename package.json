@@ -11,6 +11,7 @@
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
+  "dependencies": {},
   "devDependencies": {
     "@builder.io/partytown": "^0.10.3",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
@@ -18,7 +19,6 @@
     "@sveltejs/kit": "^2.59.1",
     "@tailwindcss/vite": "^4.3.0",
     "bits-ui": "^2.18.0",
-    "clsx": "^2.1.1",
     "prettier": "3.8.3",
     "prettier-plugin-svelte": "^3.5.1",
     "prettier-plugin-tailwindcss": "^0.8.0",

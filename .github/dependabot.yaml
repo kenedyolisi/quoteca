@@ -1,19 +1,25 @@
-# Documentation: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# See the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-
 updates:
-  - package-ecosystem: "bun"
-    # Files stored in repository root
-    directory: "/"
+  - package-ecosystem: bun
+    directory: /
     schedule:
-      interval: "weekly"
-      timezone: "Africa/Nairobi"
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: "github-actions"
-    # Workflow files stored in the default location of `.github/workflows`
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      timezone: "Africa/Nairobi"
+      interval: daily
+      timezone: Africa/Nairobi
+    cooldown:
+      default-days: 3
+    groups:
+      tailwindcss:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/vite"
+      pg:
+        patterns:
+          - "pg"
+          - "@types/pg"
+      drizzle:
+        patterns:
+          - drizzle-orm
+          - drizzle-kit

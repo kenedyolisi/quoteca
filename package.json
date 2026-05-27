@@ -14,7 +14,6 @@
   "dependencies": {},
   "devDependencies": {
     "@builder.io/partytown": "^0.10.3",
-    "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@sveltejs/adapter-vercel": "^6.3.3",
     "@sveltejs/kit": "^2.59.1",
     "@tailwindcss/vite": "^4.3.0",

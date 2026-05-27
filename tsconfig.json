@@ -31,9 +31,7 @@
     // "rootDir": "./src",                               /* Specify the root folder within your source files. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
-    "types": [
-      "@modyfi/vite-plugin-yaml/modules"
-    ],                                                /* Specify type package names to be included without being referenced in a source file. */
+    "types": [],                                         /* Specify type package names to be included without being referenced in a source file. */
 
     /* JavaScript Support */
     "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJs' option to get errors from these files. */

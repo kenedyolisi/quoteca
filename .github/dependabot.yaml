@@ -5,21 +5,9 @@ version: 2
 updates:
   - package-ecosystem: bun
     directory: /
+    open-pull-requests-limit: 20
     schedule:
       interval: daily
       timezone: Africa/Nairobi
     cooldown:
       default-days: 3
-    groups:
-      tailwindcss:
-        patterns:
-          - "tailwindcss"
-          - "@tailwindcss/vite"
-      pg:
-        patterns:
-          - "pg"
-          - "@types/pg"
-      drizzle:
-        patterns:
-          - drizzle-orm
-          - drizzle-kit
